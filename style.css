@@ -176,6 +176,8 @@ span {
     box-shadow: 0 0 25px hotpink,
         0 0 50px orangered;
     border-radius: 50%;
+    right: 30px;
+    bottom: 10px;
 }
 
 .about-content h2 {
