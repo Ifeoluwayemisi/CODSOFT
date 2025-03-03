@@ -8,6 +8,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,16 +16,17 @@
       <a href="#" class="logo">Rac<span>heal</span></a>
 
       <nav class="navbar">
-        <a href="#" class="active">Portfolio</a>
-        <a href="#">Experience</a>
-        <a href="#">Projects</a>
-        <a href="#">Education </a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Services</a>
+        <a href="#portfolio">Portfolio </a>
       </nav>
 
-      <a href="#" class="contact">contact</a>
+      <a href="#contact" class="contact1">contact</a>
     </header>
 
-    <section class="home">
+    <!--Home section-->
+    <section class="home" id="home">
       <div class="home-content">
         <h3>Hi</h3>
 
@@ -33,82 +35,190 @@
         <p>
           AS a passionate frontend developer, I specialize in crafting responsive,intuitive,and visually stunning web applications that deliver exceptional user experiences.
         </p>
-
-        <div class="btn-box">
-          <button class="btn-1">Hire me</button>
-          <button class="btn-2">Experience</button>
+        <div class="social-media">
+          <a href="https://www.facebook.com/destiny.olayode"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/destinifeoluwa?s=09"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/oluwayemisi_01?igsh=MWUya2tvc2FwM2htbg"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/racheal-oluwayemisi-olayode-3060a0340?utm_source=share&utm_campaign=share
+          -via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
         </div>
+        <a href="Racheal CV_102833.pdf" class="btn">Download CV</a>
       </div>
       <div class="img-box">
         <img src="image1.jpg" alt="" />
       </div>
     </section>
 
-    <section class="about">
+    <!--About Section-->
+
+    <section class="about" id="about">
       <div class="about-img">
-        <img src="image1.jpg" />
+        <img src="image2.jpg" />
       </div>
 
       <div class="about-content">
-        <h2 class="heading">About  <span>Me</span></h2>
+        <h2 class="heading"> About  <span>Me</span></h2>
         <h3>Frontend <span>Developer</span></h3>
         <p>
           A personal frontend developer, having an experience experience in frontend development, i possess a strong foundation in HTML|CSS|JavaScript,and popular Framework like React,Angular,and Vue.js. My expertise extends to responsive web design, accessibility, and performance optimization.
         </p>
-        <a href="#" class="btn-2">Experience</a>
+        <a href="#" class="btn">Read more</a>
       </div>
     </section>
 
-    <section class="contact-form">
-      <h2 class="contact-me">contact <span>Me</span></h2>
-      <form action='#'>
-        <fieldset>
-          <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-          <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-          <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-          <label for="number">Phone Number:
-            <input id="number" name="number" type="number" required>
-          </label>
-        </fieldset>
-        <fieldset>
-          </label>
-          <label for="Message">Your Message:
-            <textarea id="message" name="message" rows="3" cols="30" placeholder="Your Message..."></textarea>
-          </label>
-        </fieldset>
-        </label>
-        <input type="submit" value="Submit" />
+    <!--Service section-->
+
+    <section class="service" id="service">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Frontend development (HTML, CSS, JavaScript)</h3>
+          <p>I build the visual interactive aspect of your website using HTML, CSS, and JavaScript, ensuring a seamless user experience.</p>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Custom Website Design</h3>
+          <p>I design unique and tailored websites that reflect your brand's identity and messaging.</p>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Performance Optimization</h3>
+          <p>A slow website drives users away. I optimize websites for speed, efficiency, smooth performance and search engine ranking to improve visibility, engagement and conversation rate to improve user experience and SEO(search engine Optimization) rankings.</p>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Responsive Web Design</h3>
+          <p>I ensure that your website look great and functions perfectly on various devices, including; desktops, laptops, tablets, and mobile Phones.</p>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Page Optimization</h3>
+          <p>I optimize your website's performance, .</p>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Website Maintenance & Enhancements</h3>
+          <p>Keeping your website up to date, bug-free, and running smoothly is essential. I provide ongoing maintenance, updates, and feature enhancements to keep your site performing at its best</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Portfolio section-->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Project</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="port1.jpg" alt="" width="100%">
+          <div class="portfolio-layer">
+            <h1>Skill Acquisition Website</h1>
+            <p>A website to enrol for diffrent skill programmes, such as; Web development, Hair making, Photography, e.t.c </p>
+            <a href="https://github.com/ifeoluwayemisi/Racheal-Oluwayemisi-folder"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+         <img src="port1.jpg" alt="" width="100%">
+          <div class="portfolio-layer">
+            <h1>Medical Website expertise</h1>
+            <p>Hospital Websites,medical blogs and more. View my featured projects and expertise in medical website design and development.(not completed)</p>
+            <a href="https://chelle-medics.netify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="port1.jpg" alt="" width="100%">
+          <div class="portfolio-layer">
+            <h1>Calculator projects</h1>
+            <p>Custom Calculator design and development for quiz and for emergency use.</p>
+            <a href="https://ray-chelle-ife.netfy.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="port1.jpg" alt="" width="100%">
+          <div class="portfolio-layer">
+            <h1>E-commerce Landing Page</h1>
+            <p>Developed a custom e-commerce websites with shopping cart(Still on It).</p>
+            <a href="https://github.com/ifeoluwayemisi/CODSOFT"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Contact section-->
+
+    <section class="contact"  id="contact">
+      <h2 class="heading"><span>Contact</span> Me</h2>
+
+      <form name="contact" method="POST" data-netlify="true" action="/thank-you">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="input-box">
+          <input type="text" id="name" name="name" placeholder="fullname" required>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+        </div>
+       
+        <div class="input-box">
+          <input type="number" id="number" placeholder="Phone number" required>
+          <input type="text" placeholder="Email Subject">
+        </div>
+
+        <textarea name="" id="" cols="40" rows="10" placeholder="Your Message"></textarea>
+
+        <input type="submit" value="Send Message" class="btn">
       </form>
     </section>
 
-    <footer class="footer">
+    <!--footer section-->
+
+
+  <section class="footer">
+    <footer>
       <div class="social">
         <a href="https://www.facebook.com/destiny.olayode"><i class="bx bxl-facebook-circle"></i></a>
-        <a href="https://www.linkedin.com/in/racheal-oluwayemisi-olayode-3060a0340?utm_source=share&utm_campaign=share
-        -via&utm_content=profile&utm_medium=android_app"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="https://www.linkedin.com/in/racheal-oluwayemisi-olayode-3060a0340?utm_source=share&utm_campaign=share-via&utm_content=profile&utm_medium=android_app"><i class="bx bxl-linkedin-square"></i></a>
         <a href="#"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.instagram.com/oluwayemisi_01?igsh=MWUya2tvc2FwM2htbg"><i class="bx bxl-instagram-alt"></i></a>
       </div>
 
       <ul>
         <li>
-          <a href="#">FAQ</a>
+          <a href="#FAQ">FAQ</a>
         </li>
         <li>
-          <a href="#">Service</a>
+          <a href="#service">Service</a>
         </li>
         <li>
-          <a href="#">About Us</a>
+          <a href="#about">About Us</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
-          <a href="#">Privacy Policy</a>
+          <a href="#privacy-policy">Privacy Policy</a>
         </li>
       </ul>
+      <div class="copyright">
+        <div class="footer-text">
+         <p>copyright &copy; 2025 by @Racheal | All Rights Reserved.</p>
+       </div>
 
-      <p class="copyright">C 2025 Racheal | All Rights Reserved</p>
+       <div class="footer-iconTop">
+         <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+       </div>
+     </div>
     </footer>
+  </section>
+
   </body>
 </html>
