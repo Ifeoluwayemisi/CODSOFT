@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --primary-color:#e2be0a;
+    --text-dark:#0f172a;
+    --max-width:1200px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9,24,29,.9), rgba(9,24,29,.9)), url(nature1.webp<link);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    max-height: var(--max-width);
+    margin: auto;
+    z-index: 9;
+}
+
+.nav-bar{
+    padding: .75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--primary-color);
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(163, 155, 144);
+}
+
+.logo span{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: whitesmoke;
+    display: none; 
+}
+
+.nav-menu-btn{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(9, 24, 29, 0.9);
+    transition: 0.5s;
+    transform: translateY(-100%);
+    z-index: -1;
+}
+
+.nav-links.open{
+    transform: translateY(0);
+}
+.nav-links a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: var(--primary-color);
+}
+
+.container-grid{
+    position: relative;
+    isolation: isolate;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 2rem 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.container-image > div{
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 1;
+    margin: auto;
+    background-image: url("natureplane.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    -webkit-mask: url("nature1.webp");
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center center;
+}
+
+.container-content{
+    text-align: center;
+}
+
+.container-content h1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 6rem;
+    color: var(--primary-color);
+}
+
+.container-content h2{
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    max-width: 450px;
+    margin: auto;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: wheat;
+}
+
+.container-content p{
+    margin-inline: auto;
+    margin-bottom: 4rem;
+    max-width: 400px;
+    color: white;
+}
+
+.socials >div{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials a{
+    padding: 2px 7px;
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    background-color: white;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.socials a:hover{
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.socials span{
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (width > 768px){
+    nav{
+        padding: 2rem 1rem;
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-bar{
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav-logo{
+        display: flex;
+    }
+
+    .nav-menu-btn{
+        display: none;
+    }
+
+    .nav-links{
+        padding: 0;
+        width: unset;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        background-color: transparent;
+    }
+
+    .container-grid{
+        padding-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-image{
+        grid-area: 1/2/2/3;
+    }
+
+    .container-content{
+        text-align: left;
+    }
+
+    .container-content :is(h2,p) {
+        margin-inline:  unset;
+    }
+
+    .socials > div{
+        justify-content: flex-start;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <nav>
+            <div class="nav-bar">
+                <a href="#" class="nav-logo">
+                    <strong>Chelle<i                       class="fas fa-plane">Nature</i></strong>
+                </a>
+                
+                <div class="nav-menu-btn"  id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="container-grid">
+            <div class="container-image">
+                <div></div>
+            </div>
+            <div class="container-content">
+                <h1>NATURE IS CALLING</h1>
+                <h2>Protect Nature to Protect Ourselves</h2>
+                <p>Embark on a journey of a lifetime as you answer the captivating call of nature. Get ready to immerse yourself the beauty of nature like never before. </p>
+
+                <div class="socials">
+                    <div>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-whatsapp-line"></i></a>
+                    </div>
+                    <span>www.chelle-nature.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
+
+
+menuBtn.addEventListener("click", (e) => {
+    navLinks.classList.toggle("open");
+
+    const isOpen = navlinks.classList.contains("open");
+    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-3-line");
+});
+
+navLinks .addEventListener("click", (e) =>{
+    navLinks.classList.remove("open");
+    menuBtnIcon.setAttribute("class", "ri-menu-3-line");
+});
+
+const scrollRevealOption = {
+    distance:"50px",
+    origin:"bottom",
+    duration: 1000,
+};
+
+//container
+
+scrollReveal().reveal(".container-content h1", {
+    ...scrollRevealOption,
+});
+scrollReveal().reveal(".container-content h2", {
+    ...scrollRevealOption,
+    delay:500,
+});
+scrollReveal().reveal(".container-content p", {
+    ...scrollRevealOption,
+    delay:1000,
+});
+scrollReveal().reveal(".socials", {
+    ...scrollRevealOption,
+    delay:1500,
+});
+    </script>
+</body>
+</html>
